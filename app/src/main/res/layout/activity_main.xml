@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:backgroundTint="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myHumidor"
+        android:src="@drawable/ic_new_cigar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"/>
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/addCigar"
+    android:text="@string/add_cigar"
+    android:layout_below="@+id/myHumidor"
+    android:shadowColor="@color/colorPrimaryDark"
+    android:onClick="onClickAddCigar"/>
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/editText"-->
+        <!--android:layout_below="@+id/imageButton"-->
+        <!--android:layout_alignRight="@+id/imageButton"-->
+        <!--android:layout_alignEnd="@+id/imageButton" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/name"-->
+        <!--android:layout_below="@+id/imageButton"-->
+        <!--android:layout_alignLeft="@+id/textView1"-->
+        <!--android:layout_alignStart="@+id/textView1"-->
+        <!--android:layout_alignRight="@+id/textView1"-->
+        <!--android:layout_alignEnd="@+id/textView1"-->
+        <!--android:hint="Name"-->
+        <!--android:textColorHint="@android:color/holo_blue_light" />-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/grade"-->
+        <!--android:layout_below="@+id/name"-->
+        <!--android:layout_alignLeft="@+id/name"-->
+        <!--android:layout_alignStart="@+id/name"-->
+        <!--android:layout_alignRight="@+id/name"-->
+        <!--android:layout_alignEnd="@+id/name"-->
+        <!--android:hint="Grade"-->
+        <!--android:textColorHint="@android:color/holo_blue_bright" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/addName"-->
+        <!--android:text="Add Name"-->
+        <!--android:layout_below="@+id/grade"-->
+        <!--android:layout_alignRight="@+id/textView2"-->
+        <!--android:layout_alignEnd="@+id/textView2"-->
+        <!--android:layout_alignLeft="@+id/textView2"-->
+        <!--android:layout_alignStart="@+id/textView2"-->
+        <!--android:onClick="onClickAddName"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Retrive student"-->
+        <!--android:id="@+id/retrieveStudent"-->
+        <!--android:layout_below="@+id/addName"-->
+        <!--android:layout_alignLeft="@+id/addName"-->
+        <!--android:layout_alignStart="@+id/addName"-->
+        <!--android:layout_alignRight="@+id/addName"-->
+        <!--android:layout_alignEnd="@+id/addName"-->
+        <!--android:onClick="onClickRetrieveStudents"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/startServices"-->
+        <!--android:text="Start Services"-->
+        <!--android:onClick="startService"-->
+        <!--android:layout_below="@+id/retrieveStudent"-->
+        <!--android:layout_alignLeft="@+id/retrieveStudent"-->
+        <!--android:layout_alignStart="@+id/retrieveStudent"-->
+        <!--android:layout_alignRight="@+id/retrieveStudent"-->
+        <!--android:layout_alignEnd="@+id/retrieveStudent"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Stop Services"-->
+        <!--android:id="@+id/stopServices"-->
+        <!--android:onClick="stopService"-->
+        <!--android:layout_below="@+id/startServices"-->
+        <!--android:layout_alignLeft="@+id/startServices"-->
+        <!--android:layout_alignStart="@+id/startServices"-->
+        <!--android:layout_alignRight="@+id/startServices"-->
+        <!--android:layout_alignEnd="@+id/startServices" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/broadcastIntent"-->
+        <!--android:text="Broadcast Intent"-->
+        <!--android:onClick="broadcastIntent"-->
+        <!--android:layout_below="@+id/stopServices"-->
+        <!--android:layout_alignLeft="@+id/stopServices"-->
+        <!--android:layout_alignStart="@+id/stopServices"-->
+        <!--android:layout_alignRight="@+id/stopServices"-->
+        <!--android:layout_alignEnd="@+id/stopServices" />-->
+
+</RelativeLayout>
