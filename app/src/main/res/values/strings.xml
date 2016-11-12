@@ -5,4 +5,23 @@
     <string name="menu_settings">Settings</string>
     <string name="add_cigar">Add Cigar</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="search">Search</string>
+    <string name="cigar_name">Name</string>
+    <string name="brand_name">Brand</string>
+    <string name="cigar_type">Type: ex. Torpedo</string>
+    <string name="cigar_length">Length: ex. 6.25</string>
+    <string name="cigar_gauge">Gauge: ex. 50</string>
+    <string name="country">Country</string>
+    <string name="cigar_wrapper">Wrapper: ex. Connecticut</string>
+    <string name="cigar_filler">FIller: ex. Ecuador</string>
+    <string name="cigar_binder">Binder: ex. Dominican Republic</string>
+    <string name="cigar_burn">Burn: ex. Even</string>
+    <string name="cigar_robustness">Robustness:</string>
+    <string name="cigar_draw">Draw:</string>
+    <string name="cigar_score">Score:</string>
+    <string name="notes">Notes</string>
+    <string name="saveNewCigar">Save</string>
+    <string name="cancelNewCigar">Cancel</string>
+    <string name="confirmNewCigar">Confirm</string>
+    <string name="editNewCigar">Edit</string>
 </resources>

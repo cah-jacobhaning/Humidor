@@ -28,14 +28,33 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/title"/>
 
-    <Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/addCigar"
-    android:text="@string/add_cigar"
-    android:layout_below="@+id/myHumidor"
-    android:shadowColor="@color/colorPrimaryDark"
-    android:onClick="onClickAddCigar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addCigar"
+            android:text="@string/add_cigar"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            android:onClick="addCigar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:text="@string/search"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            android:onClick="search"/>
+
+    </LinearLayout>
+
 
     <!--<EditText-->
         <!--android:layout_width="wrap_content"-->

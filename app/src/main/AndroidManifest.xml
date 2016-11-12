@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jacobhaning.humidor">
+    package="com.jacobhaning.humidor">
 
     <application
         android:allowBackup="true"
@@ -18,18 +18,18 @@
 
         <service android:name=".MyService" />
 
-        <receiver android:name="MyReceiver">
-
+        <receiver android:name=".MyReceiver">
             <intent-filter>
-                <action android:name="com.tutorialspoint.CUSTOM_INTENT"/>
+                <action android:name="com.tutorialspoint.CUSTOM_INTENT" />
             </intent-filter>
-
         </receiver>
 
         <provider
-            android:name="Provider"
-            android:authorities="com.example.provider.College">
-        </provider>
+            android:name=".Provider"
+            android:authorities="com.example.provider.College" />
+
+        <activity android:name=".CigarFormActivity" />
+        <activity android:name=".NewCigarConfirmationActivity"></activity>
     </application>
 
 </manifest>

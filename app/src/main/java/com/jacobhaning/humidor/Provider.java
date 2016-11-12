@@ -1,4 +1,4 @@
-package com.example.jacobhaning.humidor;
+package com.jacobhaning.humidor;
 
         import java.util.HashMap;
 

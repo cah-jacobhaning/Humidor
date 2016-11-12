@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jacobhaning.humidor.NewCigarConfirmationActivity">
+    <data>
+        <variable
+            name="cigar"
+            type="com.jacobhaning.humidor.model.Cigar" />
+    </data>
+    <RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonPanel">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/brand_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.brand}"/>
+
+                <TextView android:id="@+id/cigar_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.name}"/>
+
+                <TextView android:id="@+id/cigar_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.type}"/>
+
+                <TextView android:id="@+id/cigar_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(cigar.length)}"/>
+
+                <TextView android:id="@+id/cigar_gauge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(cigar.gauge)}"/>
+
+                <TextView android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.country}"/>
+
+                <TextView android:id="@+id/cigar_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.wrapper}"/>
+
+                <TextView android:id="@+id/cigar_filler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.filler}"/>
+
+                <TextView android:id="@+id/cigar_binder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.binder}"/>
+
+                <TextView android:id="@+id/cigar_burn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.burn}"/>
+
+                <TextView android:id="@+id/cigar_robustness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.robustness}"/>
+
+                <TextView android:id="@+id/cigar_draw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.draw}"/>
+
+                <TextView android:id="@+id/cigar_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.score}"/>
+
+                <TextView android:id="@+id/notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{cigar.notes}"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveNewCigar"
+                android:text="@string/confirmNewCigar"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimary"
+                android:onClick="confirmNewCigar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editNewCigar"
+                android:text="@string/editNewCigar"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimary"
+                android:onClick="editNewCigar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelNewCigar"
+                android:text="@string/cancelNewCigar"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimary"
+                android:onClick="cancelConfirmNewCigar"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

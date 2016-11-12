@@ -1,25 +1,24 @@
-package com.example.jacobhaning.humidor;
+package com.jacobhaning.humidor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     String msg = "Android : ";
-    MainVm mainVm;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-//        binding.setVm(mainVm);
-        mainVm.onCreate();
+        setContentView(R.layout.activity_main);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(com.example.jacobhaning.humidor.R.menu.cigar_menu, menu);
+        getMenuInflater().inflate(com.jacobhaning.humidor.R.menu.cigar_menu, menu);
         return true;
     }
 
@@ -27,5 +26,13 @@ public class MainActivity extends AppCompatActivity {
     public void onDestroy() {
         super.onDestroy();
         Log.d(msg, "The onDestroy() event");
+    }
+
+    public void addCigar(View view){
+        startActivity(new Intent(this, CigarFormActivity.class));
+    }
+
+    public void search(View view){
+
     }
 }
